@@ -1,20 +1,74 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <h1>{{title2}}</h1>
+  <div class="fiche">
+  <h2>Detail sur {{personne1.prenom}} {{personne1.nom}}</h2>
+  <ul>
+    <li>Nom : {{personne1.nom}}</li>
+    <li>Prenom : {{personne1.prenom}}</li>
+    <li>Description : {{personne1.description}}</li>
+  </ul>
+  <ul class="debut">
+      <li><img  alt="curie1" src="http://www.histoire-passy-montblanc.fr/wp-content/uploads/2016/09/marie-curie_toned.jpg"></li> 
+      <li><img  alt="curie2" src="https://allezlesfilles.files.wordpress.com/2012/05/mariecurie.jpg"></li>      
+      <li><img alt="curie3" src="https://static.lexpress.fr/medias_10020/w_1577,h_1183,c_crop,x_0,y_155/w_605,h_350,c_fill,g_north/v1413449276/marie-curie-et-ses-filles-eve-et-irene_5130610.jpg"></li>
+  </ul>
+  <h2>Detail sur {{personne2.prenom2}} {{personne2.nom2}}</h2>
+  <ul>
+    <li>Nom : {{personne2.nom2}}</li>
+    <li>Prenom : {{personne2.prenom2}}</li>
+    <li>Description : {{personne2.description2}}</li>
+  </ul>
+  <ul class="debut">
+      <li><img alt="homer1" src="https://thelistlove.files.wordpress.com/2014/02/191.jpg"></li> 
+      <li><img alt="homer2" src="http://cdn.skim.gs/images/homer-simpson-doughnuts/what-homer-simpson-taught-us-about-doughnuts"></li>      
+      <li><img alt="homer3" src="http://www.simpsonspark.com/images/persos/contributions/homer-simpson-22757.jpg"></li>
+  </ul>
+  <h2>Formulaire de modification</h2>
+  <ul>
+    <li><input [(ngModel)]="personne1.nom"/></li>
+    <li><input [(ngModel)]="personne1.prenom"/></li>
+    <li><textarea [(ngModel)]="personne1.description"></textarea></li>
+  </ul>
+  <input type="checkbox" [(ngModel)]="Salut"/> {{Salut}}
 
+</div>
+ 
+<div class="calculatrice">
+  <div class="screen">
+    {{screen}}
+  </div>
+  <div class="screen2">
+      ( = {{count}}
+    </div>
+  <ul>
+    <li (click)="clickOn(1)">1</li>
+    <li (click)="clickOn(2)">2</li>
+    <li (click)="clickOn(3)">3</li>
+    <li (click)="clickOn(10)">+</li>
+  </ul>
+  <ul>
+    <li (click)="clickOn(4)">4</li>
+    <li (click)="clickOn(5)">5</li>
+    <li (click)="clickOn(6)">6</li>
+    <li (click)="clickOn(11)">-</li>
+  </ul>
+  <ul>
+    <li (click)="clickOn(7)">7</li>
+    <li (click)="clickOn(8)">8</li>
+    <li (click)="clickOn(9)">9</li>
+    <li (click)="clickOn(12)">/</li>
+  </ul>
+  <ul>
+    <li (click)="clickOn(0)">0</li>
+    <li (click)="clickOn(15)">,</li>   
+    <li class="egal" (click)="clickOn(14)">=</li>
+    <li (click)="clickOn(13)">*</li>
+  </ul>
+  <ul>
+    <li (click)="clickOn(16)">C</li>
+    <li (click)="clickOn(17)">(</li>
+    <li (click)="clickOn(18)">)</li>
+    <li (click)="clickOn(19)">&larr;</li>
+  </ul>
+</div>

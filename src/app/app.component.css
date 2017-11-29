@@ -1,0 +1,48 @@
+.debut li{
+    display:inline-block; 
+    list-style-type: none; 
+}
+
+.debut img{
+    height:300px; 
+}
+
+.fiche{
+    text-align:left; 
+}
+
+textarea{
+    height: 350px; 
+    width: 700px; 
+}
+
+.screen{
+    height: 50px;
+    width:250px; 
+    background-color: gray;   
+    margin:auto;
+    color: white;    
+}
+
+.screen2{
+    height: 40px;
+    width:70px; 
+    background-color: gray;   
+    margin:auto;
+    color: white;    
+}
+
+.calculatrice{
+    background-color: lightblue; 
+    height:500px; 
+    width:500px; 
+}
+
+.calculatrice li{
+    display: inline-block; 
+    height: 50px; 
+    width:50px; 
+    background-color:rgb(196, 169, 169);
+    border:1px solid black;  
+    border-radius:2px; 
+}
