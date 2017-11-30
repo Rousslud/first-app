@@ -82,4 +82,12 @@ export class AppComponent {
     }
   }
 
+  liste=[
+    {nom:'Einstein', prenom:'Albert',description: 'il a volé les idées des autres', travail:' a inventé la relativité'},
+    {nom:'Curie', prenom:'Marie',description: "s'est faite cramer par la radioactivité",travail:'a inventé le poulet sauce curry'},
+    {nom:'Pasteur', prenom:'Louis',description: "s'est fait mordre par un chien et est devenu rage de folie",travail:" a inventé le lait pasteurisé"},
+    {nom:'De Vinci', prenom:'Leonard',description: "a inventé les autoroutes",travail:"s'est fait flashé à 200km/h sur l'autoroute qu'il avait inventée"},
+    {nom:'Schrödinger', prenom:'Erwin',description: "aimait son chat fortement",travail:"mais a fait des expériences sur lui"}
+  ]
+
 }

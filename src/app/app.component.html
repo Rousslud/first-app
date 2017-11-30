@@ -72,3 +72,9 @@
     <li (click)="clickOn(19)">&larr;</li>
   </ul>
 </div>
+
+<div>
+  <ol>
+    <li *ngFor="let p of liste"> {{p.prenom}} {{p.nom}}, {{p.description}}, {{p.travail}}</li>
+  </ol>
+</div>
